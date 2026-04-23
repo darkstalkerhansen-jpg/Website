@@ -51,7 +51,7 @@
                     const cerch = document.getElementById("searchquery");
                     let query = cerch.value || "you have to search smth?";
                     let defalt = "https://www.google.com/search?q=";
-                    document.getElementById('ifram').src="http://www.google.com/custom?q=&btnG=Search";
+                    document.getElementById('ifram').src="http://www.bing.com/search?q=" + encodeURIComponent(query);
                     ifram.style.opacity = '1';
                     iframee = true;
                 }
