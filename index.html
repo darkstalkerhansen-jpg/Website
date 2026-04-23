@@ -38,7 +38,8 @@
                 const cerch = document.getElementById("searchquery");
                 let query = cerch.value || "you have to search smth?";
                 let defalt = "https://www.google.com/search?q=";
-                window.open(defalt + query);
+                document.getElementById('ifram').src="defalt + query";
+                ifram.style.opacity = '1';
             }
         </script>
     </body>
