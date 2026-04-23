@@ -20,6 +20,7 @@
         <iframe id="ifram" src=""></iframe>
         <input type="text" id="searchquery" placeholder="search the web">
         <script>
+            let iframee = false;
             const ifram= document.getElementById('ifram');
             ifram.style.opacity = '0';
             function buttonpress(button) {
@@ -31,15 +32,27 @@
             button1.style.position = 'center';
             
             function Proxyy() {
-                document.getElementById('ifram').src="https://143.244.207.157/";
-                ifram.style.opacity = '1';
+                if (iframee) {
+                    iframee = false;
+                }
+                if (iframee===false) {
+                    document.getElementById('ifram').src="https://143.244.207.157/";
+                    ifram.style.opacity = '1';
+                    iframee = true;
+                }
             }
             function search() {
-                const cerch = document.getElementById("searchquery");
-                let query = cerch.value || "you have to search smth?";
-                let defalt = "https://www.google.com/search?q=";
-                document.getElementById('ifram').src="http://www.google.com/custom?q=&btnG=Search";
-                ifram.style.opacity = '1';
+                if (iframee) {
+                    iframee = false;
+                }
+                if (iframee===false) {
+                    const cerch = document.getElementById("searchquery");
+                    let query = cerch.value || "you have to search smth?";
+                    let defalt = "https://www.google.com/search?q=";
+                    document.getElementById('ifram').src="http://www.google.com/custom?q=&btnG=Search";
+                    ifram.style.opacity = '1';
+                    iframee = true;
+                }
             }
         </script>
     </body>
