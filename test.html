@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body { margin:0; padding:0; overflow:hidden; background: linear-gradient(to right, #ff3300, #127); }
+            #buttin1 {  
+            color: #962; border-width: 10px; border-color: aqua; background: #127; border-radius: 5px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <meta charset="utf-8">
+        <title>noURLhere</title>
+        <meta name="description" content="My Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <button id="buttin1" class="buttin1" onclick="buttonpress(1)">youtube</button>
+        <button id="buttin2" class="buttin1" onclick="Proxyy()">proxy</button>
+        <button id="buttin3" class="buttin1" onclick="search()">press to search</button>
+        <iframe id="ifram" src=""></iframe>
+        <input type="text" id="searchquery" placeholder="search the web">
+        <script async src="https://cse.google.com/cse.js?cx=a286f4722c3cb4056">
+</script>
+<div class="gcse-searchbox"></div>
+<div class="gcse-searchresults"></div>
+        <script>
+            iframee = false;
+            const ifram= document.getElementById('ifram');
+            ifram.style.opacity = '0';
+            function buttonpress(button) {
+                if (button===1) {
+                    window.open("https://darkstalkerhansen-jpg.github.io/dev/DARKSTALKER.html")
+                }
+            }
+            const button1 = document.getElementById('Buttin1');
+            button1.style.position = 'center';
+            
+            function Proxyy() {
+                if (iframee) {
+                    iframee = false;
+                    document.getElementById('ifram').style.opacity = '0';
+                    document.getElementById('ifram').src = "";
+                } else if (iframee===false) {
+                    document.getElementById('ifram').src="https://143.244.207.157/";
+                    ifram.style.opacity = '1';
+                    iframee = true;
+                }
+            }
+            function search() {
+                if (iframee) {
+                    iframee = false;
+                    document.getElementById('ifram').style.opacity = '0';
+                    document.getElementById('ifram').src = "";
+                } else if (iframee===false) {
+                    const cerch = document.getElementById("searchquery");
+                    let query = cerch.value || "you have to search smth?";
+                    let defalt = "https://www.google.com/search?q=";
+                    document.getElementById('ifram').src="https://cse.google.com/cse.js?cx=a286f4722c3cb4056";
+                    ifram.style.opacity = '1';
+                    iframee = true;
+                }
+            }
+        </script>
+    </body>
+</html>
