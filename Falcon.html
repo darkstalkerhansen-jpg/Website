@@ -10,11 +10,20 @@
         <title></title>
         <meta name="description" content="Falcon browser">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <iframe src="index.html"></iframe>
+        <iframe src="" style.opacity="0"></iframe>
+        <input type="text" id="searchquery" placeholder="search the web">
+        <button id="buttin3" class="buttin1" onclick="search()">press to search</button>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <script>
+        function search() {
+            const cerch = document.getElementById("searchquery");
+            let query = cerch.value;
+            document.getElementById('ifram').src="query";
+            document.getElementById('ifram').style.width="100%";
+            document.getElementById('ifram').style.width="100%";
+            ifram.style.opacity = '1';
+        }        
+        </script>
     </body>
 </html>>
