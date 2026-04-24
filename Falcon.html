@@ -14,11 +14,11 @@
         <title>noURLhere</title>
         <meta name="description" content="My Website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="FALCON.css" href="FALCON.css">
+        <link rel="FALCON.css">
         <button class="button" onclick="buttonpress(1)">youtube</button>
         <button class="button" onclick="Proxyy()">proxy</button>
         <button class="button" onclick="search()">press to search</button>
-        <iframe class="IBig" name="iframe1" src=""></iframe>
+        <iframe Id="IBig" name="iframe1" src=""></iframe>
         <input type="text" class="button1" name="searchquery" placeholder="search the web">
         <script async src="https://cse.google.com/cse.js?cx=a286f4722c3cb4056">
         </script>
@@ -26,7 +26,7 @@
         <div id="searchresults" class="gcse-searchresults"></div>
         <script>
             iframee = false;
-            const ifram= document.getElementsByName('iframe1');
+            const ifram = document.getElementsByName("iframe1");
             ifram.style.opacity = '0';
             function buttonpress(button) {
                 if (button===1) {
