@@ -12,14 +12,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <input type="text" id="searchquery" placeholder="search the web">
         <button id="buttin3" class="buttin1" onclick="search()">press to search</button>
-        <iframe href="https://143.244.207.157/servers" width="100%" height="100%"></iframe>
+        <iframe src="index.html" id="ifram" width="100%" height="100%"></iframe>
     </head>
     <body>
         <script>
         function search() {
             const cerch = document.getElementById("searchquery");
             let query = cerch.value;
-            document.getElementById('ifram').href="index.html";
+            document.getElementById('ifram').src="index.html";
             document.getElementById('ifram').style.width="100%";
             document.getElementById('ifram').style.width="100%";
             ifram.style.opacity = '1';
