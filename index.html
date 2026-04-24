@@ -10,19 +10,19 @@
         <title>FALCON</title>
         <meta name="description" content="Falcon browser">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <input type="text" class="button1" placeholder="search the web">
+        <input type="text" class="button1" name="searchquery" placeholder="search the web">
         <button class="buttin1" onclick="search()">press to search</button>
-        <iframe src="index.html" class="iframeBig" width="100%" height="100%"></iframe>
+        <iframe src="Falcon.html" name="ifram" class="iframeBig" width="100%" height="100%"></iframe>
         <link rel="FALCON.css">
     </head>
     <body>
         <script>
         function search() {
-            const cerch = document.getElementById("searchquery");
+            const cerch = document.getElementByName("searchquery");
             let query = cerch.value;
-            document.getElementById('ifram').style.width="100%";
-            document.getElementById('ifram').style.width="100%";
-            ifram.style.opacity = '1';
+            document.getElementByName('ifram').style.width="100%";
+            document.getElementByName('ifram').style.width="100%";
+            document.getElementByName('ifram').style.opacity = "1";
         }        
         </script>
     </body>
