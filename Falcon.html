@@ -13,7 +13,7 @@
         <button class="button" onclick="buttonpress(1)">youtube</button>
         <button class="button" onclick="Proxyy()">proxy</button>
         <button class="button" onclick="search()">press to search</button>
-        <iframe id="IBig" name="iframe1" src=""></iframe>
+        <iframe style="opacity: 0;" class="IBig" name="iframe1" src=""></iframe>
         <input type="text" class="button1" name="searchquery" placeholder="search the web">
         <script async src="https://cse.google.com/cse.js?cx=a286f4722c3cb4056">
         </script>
@@ -21,36 +21,35 @@
         <div id="searchresults" class="gcse-searchresults"></div>
         <script>
             iframee = false;
-            const ifram = document.getElementsById('IBig');
-            ifram.style.opacity = '0';
+            const ifram = document.getElementsByName('iframe1');
             function buttonpress(button) {
                 if (button===1) {
-                    window.open("https://darkstalkerhansen-jpg.github.io/dev/DARKSTALKER.html")
+                    window.open("https://darkstalkerhansen-jpg.github.io/dev/DARKSTALKER.html");
                 }
             }
             
             function Proxyy() {
                 if (iframee) {
                     iframee = false;
-                    ifram.style.opacity = '0';
+                    ifram.style="opacity:0;";
                     ifram.src = "";
                 } else if (iframee===false) {
                     ifram.src="https://143.244.207.157/";
-                    ifram.style.opacity = "1";
+                    ifram.style="opacity:1;"
                     iframee = true;
                 }
             }
             function search() {
                 if (iframee) {
                     iframee = false;
-                    ifram.style.opacity = '0';
+                    ifram.style="opacity:0;"
                     ifram.src = "";
                 } else if (iframee===false) {
                     const cerch = document.getElementByName("searchquery");
                     let query = cerch.value || "you have to search smth?";
                     let defalt = "https://www.google.com/search?q=";
                     ifram.src="https://en.m.wikipedia.org/wiki/" + query;
-                    ifram.style.opacity = '1';
+                    ifram.style="opacity:1;"
                     iframee = true;
                 }
             }
