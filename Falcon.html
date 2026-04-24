@@ -14,6 +14,7 @@
         <title>noURLhere</title>
         <meta name="description" content="My Website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="FALCON.css" href="">
         <button class="button" onclick="buttonpress(1)">youtube</button>
         <button class="button" onclick="Proxyy()">proxy</button>
         <button class="button" onclick="search()">press to search</button>
@@ -23,7 +24,7 @@
         </script>
         <div id="Searchbox" class="gcse-searchbox"></div>
         <div id="searchresults" class="gcse-searchresults"></div>
-        <link rel="FALCON.css">
+        <link rel="FALCON.css" href="">
         <script>
             iframee = false;
             const ifram= document.getElementsByName('iframe1');
@@ -51,7 +52,7 @@
                     ifram.style.opacity = '0';
                     ifram.src = "";
                 } else if (iframee===false) {
-                    const cerch = document.getElementById("searchquery");
+                    const cerch = document.getElementByName("searchquery");
                     let query = cerch.value || "you have to search smth?";
                     let defalt = "https://www.google.com/search?q=";
                     ifram.src="https://en.m.wikipedia.org/wiki/" + query;
