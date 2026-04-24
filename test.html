@@ -7,8 +7,14 @@
             color: #962; border-width: 10px; border-color: aqua; background: #127; border-radius: 5px;
             }
             #Engine {
-                width: 100px; height: 80px; top: 80%;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 80vh; /* 80% of viewport height */
+                border: none;
             }
+
         </style>
     </head>
     
@@ -23,7 +29,7 @@
         <iframe id="ifram" src=""></iframe>
         <input type="text" id="searchquery" placeholder="search the web">
         <script async src="https://cse.google.com/cse.js?cx=a286f4722c3cb4056">
-        <iframe class="Engine" id="browser" src="https://darkstalkerhansen-jpg.github.io/Website/index.html#gsc.tab=0"></iframe>
+        <button class="Engine" id="browser">click me!</button>
 </script>
 <div class="gcse-searchbox"></div>
 <div class="gcse-searchresults"></div>
