@@ -1,0 +1,14 @@
+html, body { 
+    margin:0; padding:0; 
+    overflow:hidden; background: linear-gradient(to right, #ff3300, #127); }
+            
+#button {  
+    color: #962; border-width: 10px; 
+    border-color: aqua; background: #127; 
+    border-radius: 5px;
+}
+#iframeBig {
+    width:100%; height:100%;
+    border-style: outset; border-color:tomato;
+    border-width:5px; padding:5px;
+}
