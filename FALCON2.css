@@ -146,7 +146,7 @@
       80%, 90% { transform: scaleY(0.2); }
     }
 
-    .tagline { color: #8a92a6; font-size: 0.9rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 300; margin-top: 0.5rem; z-index: 1; }
+    .tagline { color: #8a92a6; font-size: 0.9rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 300; margin-top: 50px; z-index: 1; }
 
     #IBig {
     width:500px; height:500px;
