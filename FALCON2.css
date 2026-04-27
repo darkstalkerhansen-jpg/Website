@@ -1,4 +1,4 @@
- * { margin: 0; padding: 0; box-sizing: border-box; }
+ * { margin: 0; padding: 0; box-sizing: border-box; overflow: hidden; }
     body {
       background: radial-gradient(circle at 30% 30%, #1e2430, #0b0d12);
       display: flex; align-items: center; justify-content: center;
@@ -149,7 +149,7 @@
     .tagline { color: #8a92a6; font-size: 0.9rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 300; margin-top: 0.5rem; z-index: 1; }
 
     #IBig {
-    width:fit-content; height:500px;
+    width:500px; height:500px;
     border-style: outset; border-color:tomato;
     border-width:5px; padding:5px;
     }
