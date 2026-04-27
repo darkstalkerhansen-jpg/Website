@@ -149,7 +149,7 @@
     .tagline { color: #8a92a6; font-size: 0.9rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 300; margin-top: 0.5rem; z-index: 1; }
 
     #IBig {
-    width:1000px; height:500px;
+    width:fit-content; height:500px;
     border-style: outset; border-color:tomato;
     border-width:5px; padding:5px;
     }
