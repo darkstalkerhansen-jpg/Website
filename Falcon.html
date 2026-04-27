@@ -13,19 +13,25 @@
         <button id="button" onclick="buttonpress(1)">youtube</button>
         <button id="button" onclick="Proxyy()">proxy</button>
         <button id="button" onclick="search()">press to search</button>
-        <iframe style="opacity: 0;" id="IBig" name="iframe1" class="gcse-searchresults="></iframe>
         <input type="text" class="button1" name="searchquery" placeholder="search the web">
         <script async src="https://cse.google.com/cse.js?cx=a286f4722c3cb4056">
         </script>
         <div id="Searchbox" class="gcse-searchbox"></div>
-        <div id="searchresults" class="gcse-searchresults"></div>
-        <iframe src="sk_test__fqp0CmKyvrQzY_L57PiEDVaqulSygKxqbwboHR3KWU" width="800" height="600"></iframe>
+        <iframe src="" class="gcse-searchresults" width="800" height="600"></iframe>
         <script>
             iframee = false;
-            const ifram = document.getElementsByName('iframe1');
+            const ifram = document.getElementsById("IBig");
             function buttonpress(button) {
                 if (button===1) {
-                    window.open("https://darkstalkerhansen-jpg.github.io/dev/DARKSTALKER.html");
+                    if (iframee) {
+                        iframee = false;
+                        ifram.style="opacity:0;";
+                        ifram.src = "";
+                    } else if (iframee===false) {
+                        ifram.src="https://darkstalkerhansen-jpg.github.io/dev/DARKSTALKER.html";
+                        ifram.style="opacity:1;"
+                        iframee = true;
+                    }
                 }
             }
             
