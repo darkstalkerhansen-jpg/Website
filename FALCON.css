@@ -9,7 +9,7 @@ html, body {
     border-radius: 5px;
 }
 #IBig {
-    width:fit-content; height:500px;
+    width:1000px; height:500px;
     border-style: outset; border-color:tomato;
     border-width:5px; padding:5px;
 }
