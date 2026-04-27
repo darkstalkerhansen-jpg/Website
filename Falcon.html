@@ -17,10 +17,12 @@
         <script async src="https://cse.google.com/cse.js?cx=a286f4722c3cb4056">
         </script>
         <div id="Searchbox" class="gcse-searchbox"></div>
-        <iframe src="" class="gcse-searchresults" width="800" height="600"></iframe>
+        <div id="SearchResults" class="gcse-searchresults"></div>
+        <iframe src="" id="IBig" width="800" height="600"></iframe>
         <script>
             iframee = false;
             const ifram = document.getElementsById("IBig");
+            ifram.style.opacity="0";
             function buttonpress(button) {
                 if (button===1) {
                     if (iframee) {
