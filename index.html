@@ -89,8 +89,8 @@
 </p>
 <script>
 const cerch = document.getElementById("IBig");
-const inpt = document.getElementsByName("button1");
-cerch.style.opacity='0';
+const inpt = document.getElementByName("button1");
+cerch.style.opacity="0";
 iframee = false;
 full = false;
 function fullscreen() {
@@ -106,13 +106,13 @@ function fullscreen() {
         cerch.style.border='outset';
         cerch.style.width='500px';
         cerch.style.height='500px';
-        wow.style.display = 'block';
+        wow.style.display = 'flex';
         full = false;
     }
 }
 function launch() {
     if (iframee===false) { 
-        cerch.style="opacity:1;";
+        cerch.style.opacity="1";
         let source = inpt.value || "Falcon.html";
         cerch.src = source;
         iframee=true;
