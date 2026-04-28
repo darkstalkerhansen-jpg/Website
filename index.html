@@ -85,36 +85,41 @@
 <button id="button" onclick="Launch()">Click to launch Falcon</button>
 <input type="text" id="button1" placeholder="type URL here">
 <p>
-<iframe src="" name="ifram" id="IBig" style="opacity: 0;"></iframe>
+<iframe src="" name="ifram" id="IBig"></iframe>
 </p>
 <script>
 const cerch = document.getElementById("IBig");
 const inpt = document.getElementById("button1");
+cerch.style.opacity='0';
 iframee = false;
 full = false;
 function fullscreen() {
-    const wow = document.getElementById("title-wrapper")
+    const wow = document.getElementById("title-wrapper");
     if (full===false) {
         cerch.style.display='block';
         cerch.style.border='none';
         cerch.style.width='100vw';
         cerch.style.height='100vh';
         wow.style.display = 'none';
+        full = true;
     } else if (full) {
         cerch.style.border='outset';
         cerch.style.width='500px';
         cerch.style.height='500px';
         wow.style.display = 'block';
+        full = false;
     }
 }
 function launch() {
     if (iframee===false) { 
         cerch.style.opacity='1';
-        let source = inpt.value || "Falcon.html";
+        let source = inpt.value || "https://darkstalkerhansen-jpg.github.io/Website/Falcon.html";
         cerch.src = source;
+        iframee=true;
     } else if (iframee) {
         cerch.style.opacity='0';
         cerch.src="";
+        iframee = false;
     }
 }
 </script>
