@@ -81,19 +81,27 @@
 </div>
 </div>
 <p class="tagline">privacy · freedom</p>
-<button id="button" onclick="search()">press for fullscreen</button>
+<button id="button" onclick="fullscreen()">press for fullscreen</button>
+<button id="button" onclick="Launch()">Click to launch Falcon</button>
+<input type="text" id="button1" placeholder="type URL here">
 <p>
-<iframe src="Falcon.html" name="ifram" id="IBig"></iframe>
+<iframe src="" name="ifram" id="IBig" style="opacity: 0;"></iframe>
 </p>
 <script>
-function search() {
 const cerch = document.getElementById("IBig");
+const inpt = document.getElementById("button1")
+function fullscreen() {
 const wow = document.getElementById("title-wrapper")
 cerch.style.display='block';
 cerch.style.border='none';
 cerch.style.width='100vw';
 cerch.style.height='100vh';
 wow.style.display = 'none';
+}
+function launch() {
+    cerch.style.opacity='1';
+    let source = inpt.value || "Falcon.html";
+    cerch.src = source;
 }
 </script>
 </body>
