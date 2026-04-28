@@ -82,7 +82,7 @@
 </div>
 <p class="tagline">privacy · freedom</p>
 <button id="button" onclick="fullscreen()">press for fullscreen</button>
-<button id="button" onclick="Launch()">Click to launch Falcon</button>
+<button id="button" onclick="Proxyy()">Click to launch Falcon</button>
 <input type="text" id="button" name="button1" placeholder="type URL here">
 <p>
 <iframe src="" name="ifram" id="IBig"></iframe>
@@ -122,6 +122,18 @@ function launch() {
         iframee = false;
     }
 }
+function Proxyy() {
+                if (iframee) {
+                    iframee = false;
+                    cerch.style="opacity:0;";
+                    cerch.src = "";
+                } else if (iframee===false) {
+                    cerch.src="https://143.244.207.157/";
+                    cerch.style="opacity:1;"
+                    iframee = true;
+                }
+            }
+            
 </script>
 </body>
 </html>
