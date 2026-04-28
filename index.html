@@ -83,14 +83,14 @@
 <p class="tagline">privacy · freedom</p>
 <button id="button" onclick="fullscreen()">press for fullscreen</button>
 <button id="button" onclick="Launch()">Click to launch Falcon</button>
-<input type="text" id="button1" placeholder="type URL here">
+<input type="text" id="button" name="button1" placeholder="type URL here">
 <p>
-<iframe src="Falcon.html" name="ifram" id="IBig"></iframe>
+<iframe src="" name="ifram" id="IBig"></iframe>
 </p>
 <script>
 const cerch = document.getElementById("IBig");
-const inpt = document.getElementById("button1");
-cerch.style.opacity='1';
+const inpt = document.getElementsByName("button1");
+cerch.style.opacity='0';
 iframee = false;
 full = false;
 function fullscreen() {
@@ -112,8 +112,8 @@ function fullscreen() {
 }
 function launch() {
     if (iframee===false) { 
-        cerch.style.opacity='1';
-        let source = inpt.value || "https://darkstalkerhansen-jpg.github.io/Website/Falcon.html";
+        cerch.style="opacity:1;";
+        let source = inpt.value || "Falcon.html";
         cerch.src = source;
         iframee=true;
     } else if (iframee) {
