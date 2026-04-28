@@ -83,7 +83,7 @@
 <p class="tagline">privacy · freedom</p>
 <button id="button" onclick="fullscreen()">press for fullscreen</button>
 <button id="button" onclick="launch()">Click to launch Falcon</button>
-<input type="text" id="button" name="button1" placeholder="type URL here">
+<input type="text" id="button1" name="button1" placeholder="type URL here">
 <p>
 <iframe src="" id="IBig"></iframe>
 </p>
@@ -112,7 +112,7 @@ function fullscreen() {
 function launch() {
     if (iframee===false) { 
         cerch.style.opacity="1";
-        const inpt = document.getElementByName("button1");
+        const inpt = document.getElementById("button1");
         let source = inpt.value || "https://143.244.207.157/";
         window.open(source);
         cerch.src = source;
