@@ -90,18 +90,32 @@
 <script>
 const cerch = document.getElementById("IBig");
 const inpt = document.getElementById("button1")
+iframee = false;
+full = false;
 function fullscreen() {
-const wow = document.getElementById("title-wrapper")
-cerch.style.display='block';
-cerch.style.border='none';
-cerch.style.width='100vw';
-cerch.style.height='100vh';
-wow.style.display = 'none';
+    const wow = document.getElementById("title-wrapper")
+    if (full===false) {
+        cerch.style.display='block';
+        cerch.style.border='none';
+        cerch.style.width='100vw';
+        cerch.style.height='100vh';
+        wow.style.display = 'none';
+    } else if (full) {
+        cerch.style.border='outset';
+        cerch.style.width='500px';
+        cerch.style.height='500px';
+        wow.style.display = 'block';
+    }
 }
 function launch() {
-    cerch.style.opacity='1';
-    let source = inpt.value || "Falcon.html";
-    cerch.src = source;
+    if (iframee===false) { 
+        cerch.style.opacity='1';
+        let source = inpt.value || "Falcon.html";
+        cerch.src = source;
+    } else if (iframee) {
+        cerch.style.opacity='0';
+        cerch.src="";
+    }
 }
 </script>
 </body>
