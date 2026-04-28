@@ -55,9 +55,9 @@
                     ifram.src = "";
                 } else if (iframee===false) {
                     const cerch = document.getElementByName("searchquery");
-                    let query = cerch.value || "you have to search smth?";
+                    let query = cerch.value;
                     let defalt = "https://www.google.com/search?q=";
-                    ifram.src="https://en.m.wikipedia.org/wiki/" + query;
+                    ifram.src=query;
                     ifram.style="opacity:1;"
                     iframee = true;
                 }
