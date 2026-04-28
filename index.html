@@ -128,7 +128,9 @@ function Proxyy() {
                     cerch.style="opacity:0;";
                     cerch.src = "";
                 } else if (iframee===false) {
-                    cerch.src="https://143.244.207.157/";
+                    const inpt = document.getElementByName("button1");
+                    let source = inpt.value || "Falcon.html";
+                    cerch.src = source;
                     cerch.style="opacity:1;"
                     iframee = true;
                 }
