@@ -84,6 +84,8 @@
 <button id="button" onclick="fullscreen()">press for fullscreen</button>
 <button id="button" onclick="launch()">Click to launch Falcon</button>
 <input type="text" id="button1" name="button1" placeholder="type URL here">
+<input type="text" id="button2" name="button1" placeholder="type URL here">
+
 <p>
 <iframe src="" id="IBig"></iframe>
 </p>
@@ -95,7 +97,7 @@ full = false;
 
 function update() {
     current=document.getElementById("IBig").src;
-    document.getElementById("button1").placeholder=current;
+    document.getElementById("button2").placeholder=current;
 }
 function fullscreen() {
     const wow = document.getElementById("title-wrapper");
