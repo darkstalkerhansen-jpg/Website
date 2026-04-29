@@ -92,6 +92,11 @@ const cerch = document.getElementById("IBig");
 cerch.style.opacity="0";
 iframee = false;
 full = false;
+
+function update() {
+    current=document.getElementById("IBig").src;
+    print(current);
+}
 function fullscreen() {
     const wow = document.getElementById("title-wrapper");
     if (full===false) {
@@ -115,6 +120,7 @@ function launch() {
         const inpt = document.getElementById("button1");
         let source = inpt.value || "Falcon.html";
         cerch.src = source;
+        update();
         iframee=true;
     } else if (iframee) {
         cerch.style.opacity='0';
