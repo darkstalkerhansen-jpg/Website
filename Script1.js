@@ -45,7 +45,7 @@ function launch() {
 }
 
 function previous() {
-    cerch.src=old;
+    cerch.src="Falcon.html";
 }
 
 function newWindow() {
