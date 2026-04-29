@@ -2,10 +2,15 @@ const cerch = document.getElementById("IBig");
 cerch.style.opacity="0";
 iframee = false;
 full = false;
+current = 0;
+old = 0;
 
 function update() {
-    current=document.getElementById("IBig").src;
-    document.getElementById("button2").placeholder=current;
+    if (current!=0) {
+        old = current;
+        current=document.getElementById("IBig").src;
+    }
+
 }
 function fullscreen() {
     const wow = document.getElementById("title-wrapper");
@@ -38,6 +43,20 @@ function launch() {
         iframee = false;
     }
 }
+
+function previous() {
+    cerch.src=old;
+}
+
+function newWindow() {
+    cerch.style.opacity="1";
+        const inpt = document.getElementById("button1");
+        let source = inpt.value || "Falcon.html";
+        cerch.src = source;
+        update();
+        iframee=true;
+}
+
 function Proxyy() {
                 if (iframee) {
                     iframee = false;
