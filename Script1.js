@@ -7,7 +7,7 @@ old = 0;
 
 function update() {
     if (current!=0) {
-        old = current;
+        old = "https://" + current;
         current=document.getElementById("IBig").src;
     }
 
