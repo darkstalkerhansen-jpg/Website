@@ -9,6 +9,7 @@ function update() {
     if (current!=0) {
         old = current;
         current=document.getElementById("IBig").src;
+        document.getElementById("button2").placeholder=old;
     }
 
 }
