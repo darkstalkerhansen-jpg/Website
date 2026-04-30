@@ -7,7 +7,6 @@ old = 0;
 
 function update() {
     if (current!=0) {
-        old = current;
         current=document.getElementById("IBig").src;
         document.getElementById("button2").placeholder=old;
     }
@@ -46,7 +45,7 @@ function launch() {
 }
 
 function previous() {
-    cerch.src="https://" + old;
+    cerch.src=old;
     update();
 }
 
@@ -57,6 +56,8 @@ function newWindow() {
         cerch.src = source;
         update();
         iframee=true;
+        old=current;
+        current=source;
 }
 
 function Proxyy() {
