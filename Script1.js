@@ -7,7 +7,7 @@ old = 0;
 
 function update() {
     if (current!=0) {
-        old = "https://" + current;
+        old = current;
         current=document.getElementById("IBig").src;
     }
 
@@ -46,8 +46,7 @@ function launch() {
 
 function previous() {
     cerch.src=old;
-    old=current;
-    current=cerch.src;
+    update();
 }
 
 function newWindow() {
