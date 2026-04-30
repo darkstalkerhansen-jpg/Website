@@ -4,12 +4,14 @@ iframee = false;
 full = false;
 current = 0;
 old = 0;
+display2=0;
 
 function update() {
     if (current!=0) {
         old=current;
         current=document.getElementById("IBig").src;
-        document.getElementById("button2").placeholder=old;
+        display2 = document.getElementById("button2");
+        display2.setAttribute('placeholder', old);
     }
 
 }
