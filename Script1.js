@@ -11,7 +11,7 @@ function update() {
         old=current;
         current=document.getElementById("IBig").src;
         display2 = document.getElementById("button2");
-        display2.setAttribute('placeholder', old);
+        display2.setAttribute('placeholder', "what");
     }
 
 }
@@ -48,7 +48,7 @@ function launch() {
 }
 
 function previous() {
-    cerch.src=old;
+    cerch.src="https://" + old;
     update();
 }
 
