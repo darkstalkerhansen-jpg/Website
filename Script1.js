@@ -3,15 +3,14 @@ cerch.style.opacity="0";
 iframee = false;
 full = false;
 current = 0;
-old = 0;
+old = "https:/"+"/143.244.207.157";
 display2=0;
 
 function update() {
     if (current!=0) {
         old=current;
         current=document.getElementById("IBig").src;
-        display2 = document.getElementById("button2");
-        display2.setAttribute('placeholder', "what");
+        document.getElementById("button2").setAttribute('placeholder', "what");
     }
 
 }
@@ -48,7 +47,7 @@ function launch() {
 }
 
 function previous() {
-    cerch.src="https://" + old;
+    cerch.src=old;
     update();
 }
 
