@@ -159,7 +159,7 @@
 #button5 {  
   border: none;
     background-image: url("youtube.jpeg");
-    background-size: cover;
+    background-size:auto;
     background-repeat: no-repeat;
     background-position: center;
     }
