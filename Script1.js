@@ -5,6 +5,7 @@ full = false;
 current = 0;
 old = "https:/"+"/143.244.207.157";
 display2=0;
+currentmode=darkmode;
 
 function update() {
     if (current!=0) {
@@ -71,6 +72,21 @@ function Proxyy() {
                     iframee = true;
                 }
             }
+
+function switchmodes() {
+    if (currentmode===darkmode) {
+        currentmode=lightmode;
+        switch1();
+    } else if (currentmode===lightmode) {
+        currentmode=darkmode;
+        switch1();
+    }
+}
             
-            
-       
+function switch1() {
+    if (currentmode===lightmode) {
+        document.body.style.background="#FFFF";
+    } else if (currentmode===darkmode) {
+        document.body.style.background="#000000";
+    }
+}
