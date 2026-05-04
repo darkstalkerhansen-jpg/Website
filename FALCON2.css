@@ -154,7 +154,15 @@
     border-width:5px; padding: 5px;
     }
     #button {  
-    background-image: url("youtube.jpeg");
+    border: none;
+    background-image: url("leftlight.jpeg");
+    background-size: contain;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    height: 10px;
+    width: 10rem;
     }
 #button5 {  
   border: none;
