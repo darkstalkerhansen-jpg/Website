@@ -6,7 +6,10 @@ current = 0;
 old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
-bruh="bruh";
+const plus = document.getElementById("plus");
+const full = document.getElementById("full");
+const forward = document.getElementById("forward");
+const back = document.getElementById("back");
 
 function update() {
     if (current!=0) {
@@ -77,7 +80,6 @@ function Proxyy() {
 function switchmodes() {
     if (currentmode==="darkmode") {
         currentmode="lightmode";
-        window.alert("switched to light mode");
         switch1();
     } else if (currentmode==="lightmode") {
         currentmode="darkmode";
@@ -86,8 +88,9 @@ function switchmodes() {
 }
             
 function switch1() {
-    if (currentmode="lightmode") {
+    if (currentmode==="lightmode") {
         document.body.style.background="#FFFF";
+        full.style.backgroundImage="fulllight.jpeg";
     } else if (currentmode==="darkmode") {
         document.body.style.background="#000000";
     }
