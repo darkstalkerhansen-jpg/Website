@@ -74,6 +74,7 @@ function Proxyy() {
             }
 
 function switchmodes() {
+    window.alert("modedetect")
     if (currentmode===darkmode) {
         currentmode=lightmode;
         switch1();
@@ -84,6 +85,7 @@ function switchmodes() {
 }
             
 function switch1() {
+    window.alert("switchedmodes")
     if (currentmode===lightmode) {
         document.body.style.background="#FFFF";
     } else if (currentmode===darkmode) {
