@@ -90,7 +90,6 @@ function switchmodes() {
 function switch1() {
     if (currentmode==="lightmode") {
         document.body.style.background="#FFFF";
-        full.style.backgroundImage="fulllight.jpeg";
     } else if (currentmode==="darkmode") {
         document.body.style.background="#000000";
     }
