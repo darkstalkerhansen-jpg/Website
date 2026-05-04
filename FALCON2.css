@@ -159,8 +159,8 @@
 #button5 {  
   border: none;
     background-image: url("leftdark.jpeg");
-    background-size:contain;
-    background-size: 100%;
+    background-size:cover;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #5d5d5d;
