@@ -195,8 +195,8 @@
     background-position: center;
     background-color: #ffffff;
     border-radius: 50%;
-    width: 150px;
-    height: 100px;
+    width: 50px;
+    height: 25px;
     }
 #button2 {  
   border: none;
@@ -205,5 +205,5 @@
     background-size: 90%;
     background-repeat: no-repeat;
     background-position:top;
-    background-color: #5d5d5d;
+    background-color: #5d5d;
     }
