@@ -6,10 +6,6 @@ current = 0;
 old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
-const plus = document.getElementById("plus");
-const full = document.getElementById("full");
-const forward = document.getElementById("forward");
-const back = document.getElementById("back");
 
 function update() {
     if (current!=0) {
