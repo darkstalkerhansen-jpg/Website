@@ -162,6 +162,6 @@
     background-size:cover;
     background-size: 90%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:top, -1000%;
     background-color: #5d5d5d;
     }
