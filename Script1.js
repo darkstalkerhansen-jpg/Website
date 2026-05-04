@@ -6,6 +6,7 @@ current = 0;
 old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
+bruh="bruh";
 
 function update() {
     if (current!=0) {
