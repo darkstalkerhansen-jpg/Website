@@ -188,16 +188,15 @@
     }
     #full {  
     border: none;
-    background-image: url("leftlight.jpeg");
+    background-image: url("fulllight.jpeg");
     background-size: contain;
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ffffff;
     border-radius: 50%;
-    width: auto;
-    height: auto;
-    text-decoration-color: #ffffff;
+    width: 20px;
+    height: 10px;
     }
 #button5 {  
   border: none;
