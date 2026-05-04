@@ -5,7 +5,7 @@ full = false;
 current = 0;
 old = "https:/"+"/143.244.207.157";
 display2=0;
-currentmode=darkmode;
+currentmode="darkmode";
 
 function update() {
     if (current!=0) {
@@ -74,20 +74,20 @@ function Proxyy() {
             }
 
 function switchmodes() {
-    if (currentmode===darkmode) {
-        currentmode=lightmode;
-        window.alert("switched to light mode")
+    if (currentmode==="darkmode") {
+        currentmode="lightmode";
+        window.alert("switched to light mode");
         switch1();
-    } else if (currentmode===lightmode) {
-        currentmode=darkmode;
+    } else if (currentmode==="lightmode") {
+        currentmode="darkmode";
         switch1();
     }
 }
             
 function switch1() {
-    if (currentmode===lightmode) {
+    if (currentmode="lightmode") {
         document.body.style.background="#FFFF";
-    } else if (currentmode===darkmode) {
+    } else if (currentmode==="darkmode") {
         document.body.style.background="#000000";
     }
 }
