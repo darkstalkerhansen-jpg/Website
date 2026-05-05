@@ -66,7 +66,7 @@ function newWindow() {
         } else if (proxytrue===true) {
             source1 = "https://duckduckgo.com/?q=" + source;
             cerch.src = source1;
-            window.alert(source1);
+            window.alert("duck duck through proxy");
             update();
             iframee=true;
         } else if (proxytrue===false) {
