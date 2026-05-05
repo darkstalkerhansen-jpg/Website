@@ -94,11 +94,9 @@ function checkifproxy() {
     if (window.location.ancestorOrigins) {
         document.getElementById("button2").style.backgroundColor="#FFFFFF";
         window.alert("launched normally");
-    } else if (window.location.ancestorOrigins==="https://darkstalkerhansen-jpg.github.io/Website/index.html") {
-        window.alert("launched normally2");
     } else {
         document.getElementById("button2").style.backgroundColor="#000000";
-        window.alert(window.location.ancestorOrigins);
+        window.alert("launched through proxy");
     } 
 }
 checkifproxy();
