@@ -58,20 +58,16 @@ function newWindow() {
     const inpt = document.getElementById("button1");
     let source = inpt.value || "Falcon.html";
     if (source!="Falcon.html") {
-        if (source.startsWith("https://")) {
-            window.alert("starts with https://");
+        if (source.substr(0,8) == 'https://') {
+            window.alert('the string starts with https://');
             cerch.src = source;
             update();
             iframee=true;
-        } else if (proxytrue===true) {
-            source1 = "https://duckduckgo.com/?q=" + source;
-            cerch.src = source1;
-            window.alert("duck duck through proxy");
-            update();
-            iframee=true;
-        } else if (proxytrue===false) {
+        } else {
             window.alert("if failed, use a proxy");
-            cerch.src = "https://duckduckgo.com/?q=" + source;
+            bruh = "https://duckduckgo.com/?q=" + source;
+            window.alert(bruh);
+            cerch.src=bruh;
             update();
             iframee=true;
         }
