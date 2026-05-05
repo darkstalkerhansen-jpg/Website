@@ -91,7 +91,7 @@ function switch1() {
     }
 }
 function checkifproxy() {
-    if (window.location.ancestorOrigins==="https://darkstalkerhansen-jpg.github.io") {
+    if (window.location.ancestorOrigins!="undefined") {
         document.getElementById("button2").style.backgroundColor="#FFFFFF";
         window.alert("launched normally");
     } else if (window.location.ancestorOrigins==="https://darkstalkerhansen-jpg.github.io/Website/index.html") {
