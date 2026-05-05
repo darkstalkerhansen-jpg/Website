@@ -91,12 +91,12 @@ function switch1() {
     }
 }
 function checkifproxy() {
-    if (window.location.origin==="https://darkstalkerhansen-jpg.github.io/Website/index.html") {
+    if (window.location.href==="https://darkstalkerhansen-jpg.github.io/Website/index.html") {
         document.getElementById("button2").style.backgroundColor="#FFFFFF";
         window.alert("launched normally");
     } else {
         document.getElementById("button2").style.backgroundColor="#000000";
-        window.alert(window.location.origin);
+        window.alert(window.location.href);
     }
 }
 checkifproxy();
