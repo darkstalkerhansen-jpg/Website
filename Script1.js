@@ -91,14 +91,14 @@ function switch1() {
     }
 }
 function checkifproxy() {
-    if (window.location.href==="https://darkstalkerhansen-jpg.github.io") {
+    if (window.location.host==="https://darkstalkerhansen-jpg.github.io") {
         document.getElementById("button2").style.backgroundColor="#FFFFFF";
         window.alert("launched normally");
-    } else if (window.location.href==="https://darkstalkerhansen-jpg.github.io/Website/index.html") {
+    } else if (window.location.host==="https://darkstalkerhansen-jpg.github.io/Website/index.html") {
         window.alert("launched normally2");
     } else {
         document.getElementById("button2").style.backgroundColor="#000000";
-        window.alert(window.location.href);
+        window.alert(window.location.host);
     } 
 }
 checkifproxy();
