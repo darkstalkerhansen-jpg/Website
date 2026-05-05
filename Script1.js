@@ -96,7 +96,7 @@ function checkifproxy() {
         window.alert("launched normally");
     } else {
         document.getElementById("button2").style.backgroundColor="#000000";
-        window.alert("launched through proxy")
+        window.alert(window.location.origin);
     }
 }
 checkifproxy();
