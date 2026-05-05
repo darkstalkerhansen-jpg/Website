@@ -64,10 +64,8 @@ function newWindow() {
             update();
             iframee=true;
         } else {
-            window.alert("if failed, use a proxy");
-            bruh = "https://duckduckgo.com/?q=" + source;
-            window.alert(bruh);
-            cerch.src=bruh;
+            window.alert(proxytrue);
+            cerch.src=("https://duckduckgo.com/?q=" + source);
             update();
             iframee=true;
         }
