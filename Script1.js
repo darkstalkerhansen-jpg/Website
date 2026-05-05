@@ -64,7 +64,7 @@ function newWindow() {
             update();
             iframee=true;
         } else {
-            window.alert(proxytrue);
+            window.alert("duck");
             cerch.src=("https://duckduckgo.com/?q=" + source);
             update();
             iframee=true;
