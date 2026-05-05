@@ -59,6 +59,7 @@ function newWindow() {
     let source = inpt.value || "Falcon.html";
     if (source!="Falcon.html") {
         if (source.startsWith("https://")) {
+            window.alert("starts with https://");
             cerch.src = source;
             update();
             iframee=true;
@@ -75,6 +76,7 @@ function newWindow() {
             iframee=true;
         }
     } else {
+        window.alert("is falcon");
         cerch.src = source;
         update();
         iframee=true;
