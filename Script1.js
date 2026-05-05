@@ -90,3 +90,13 @@ function switch1() {
         document.body.style.background="#000000";
     }
 }
+function checkifproxy() {
+    if (window.location.origin==="https://darkstalkerhansen-jpg.github.io/Website/index.html") {
+        document.getElementById("button2").style.backgroundColor="#FFFFFF";
+        window.alert("launched normally");
+    } else {
+        document.getElementById("button2").style.backgroundColor="#000000";
+        window.alert("launched through proxy")
+    }
+}
+checkifproxy();

@@ -211,11 +211,5 @@
     }
 
 #button2 {  
-  border: none;
-    background-image: url("leftdark.jpeg");
-    background-size:cover;
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-position:top;
-    background-color: #AAA;
-    }
+  border-color: #0b0d12;   
+}
