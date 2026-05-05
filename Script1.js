@@ -6,6 +6,7 @@ current = 0;
 old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
+proxytrue=unknown;
 
 function update() {
     if (current!=0) {
@@ -54,11 +55,28 @@ function previous() {
 
 function newWindow() {
     cerch.style.opacity="1";
-        const inpt = document.getElementById("button1");
-        let source = inpt.value || "Falcon.html";
+    const inpt = document.getElementById("button1");
+    let source = inpt.value || "Falcon.html";
+    if (source!="Falcon.html") {
+        if (source.startsWith("https://")) {
+            cerch.src = source;
+            update();
+            iframee=true;
+        } else if (proxytrue===true) {
+            cerch.src = "https://duckduckgo.com/?q=" + source;
+            update();
+            iframee=true;
+        } else if (proxytrue===false) {
+            window.alert("if failed, use a proxy");
+            cerch.src = "https://duckduckgo.com/?q=" + source;
+            update();
+            iframee=true;
+        }
+    } else {
         cerch.src = source;
         update();
         iframee=true;
+    }
 }
 
 function Proxyy() {
@@ -93,10 +111,10 @@ function switch1() {
 function checkifproxy() {
     if (window.location.ancestorOrigins) {
         document.getElementById("button2").style.backgroundColor="#FFFFFF";
-        window.alert("launched normally");
+        proxytrue=false;
     } else {
         document.getElementById("button2").style.backgroundColor="#000000";
-        window.alert("launched through proxy");
+        proxytrue=true;
     } 
 }
 checkifproxy();
