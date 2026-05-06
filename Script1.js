@@ -48,6 +48,20 @@ function launch() {
     }
 }
 
+const toggle = document.getElementById('preventLeaveToggle');
+
+window.onbeforeunload = function(e) {
+  if (toggle.checked) {
+    // Standardizing for modern browsers
+    e.preventDefault();
+    e.returnValue = 'Are you sure you want to leave? Your changes may not be saved.';
+    return e.returnValue;
+  }
+  // If unchecked, return null to allow leaving
+  return null;
+};
+
+
 function previous() {
     cerch.src=old;
     update();
