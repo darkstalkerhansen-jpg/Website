@@ -87,15 +87,18 @@
 <button id="full" onclick="fullscreen()"></button>
 <button id="plus" onclick="newWindow()"></button>
 <input type="search" id="button1" name="button1" placeholder="type URL here">
-<button id="forward" onclick="newWindow()"></button>
+<button id="forward" onclick="ne()"></button>
 <button id="back" onclick="previous()"></button>
 <input type="color" id="button2" placeholder="">
+<label>
+  <input type="checkbox" id="preventLeaveToggle"> Enable Protection
+</label>
 <label>
   <input type="checkbox" id="darkmode" onclick="switchmodes()">
   dark mode
 </label>
 <p>
-<iframe src="" id="IBig"></iframe>
+<iframe sandbox="allow-same-origin allow-scripts" src="" id="IBig"></iframe>
 </p>
 </body>
 </html>
