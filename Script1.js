@@ -50,16 +50,18 @@ function launch() {
 
 const toggle = document.getElementById('preventLeaveToggle');
 
-window.onbeforeunload = function(e) {
+window.onbeforeunload = function() {
   if (toggle.checked) {
-    // Standardizing for modern browsers
-    e.preventDefault();
-    e.returnValue = 'Are you sure you want to leave? Your changes may not be saved.';
-    return e.returnValue;
+   return 'Are you sure that you want to leave this page?';
   }
-  // If unchecked, return null to allow leaving
-  return null;
 };
+
+window.addEventListener('beforeunload', (event) => {
+  // Cancel the event as stated by the standard.
+  event.preventDefault();
+  // Chrome requires returnValue to be set.
+  event.returnValue = '';
+});
 
 
 function previous() {
