@@ -1,3 +1,4 @@
+
 const cerch = document.getElementById("IBig");
 cerch.style.opacity="0";
 iframee = false;
@@ -7,6 +8,11 @@ old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
 proxytrue=unknown;
+document.onvisibilitychange = function() {
+  if (document.visibilityState === 'hidden') {
+    window.alert("window exited");
+  }
+};
 
 function update() {
     if (current!=0) {
@@ -50,13 +56,18 @@ function launch() {
 
 const toggle = document.getElementById('preventLeaveToggle');
 
-window.onbeforeunload = window.alert('Are you sure that you want to leave this page?')
+window.onbeforeunload = window.alert('Are you sure that you want to leave this page?');
+
+window.onbeforeunload = preventDefault();
+
+window.onbeforeunload = event.preventDefault();
+
 
 window.addEventListener('beforeunload', (event) => {
   // Cancel the event as stated by the standard.
   event.preventDefault();
   // Chrome requires returnValue to be set.
-  event.returnValue = '';
+  event.returnValue = 'hey no';
 });
 
 function previous() {
