@@ -1,23 +1,101 @@
-<!DOCTYPE <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>test</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="FALCON.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        
-        <iframe scr="https://www.google.com/search?q=Coffee&oq=Coffee&sourceid=chrome&ie=UTF-8" id="IBig"></iframe>
-    </body>
-</html>>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falcon Browser</title>
+<link rel="stylesheet" href="FALCON2.css">
+<script src="Script1.js" defer></script>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="wind">
+<div class="wind-line"></div>
+<div class="wind-line"></div>
+<div class="wind-line"></div>
+<div class="wind-line"></div>
+<div class="wind-line"></div>
+<div class="wind-line"></div>
+</div>
+<div class="title-wrapper" id="title-wrapper">
+<div class="falcon-F">
+<svg viewBox="0 0 90 170" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#2d3436"/>
+<stop offset="100%" stop-color="#4a5568"/>
+</linearGradient>
+</defs>
+<g transform="skewX(-30)">
+<g class="wing-top">
+<path d="M46,70 L46,40 L88,40 Q90,40 88,48 L52,48 L52,70 Z" fill="#576574" stroke="#1e272e" stroke-width="1.2"/>
+<path d="M52,44 L84,44" stroke="#2d3436" stroke-width="1.4" stroke-dasharray="2 4"/>
+</g>
+<g class="tail-group">
+<rect x="40" y="130" width="10" height="30" rx="3" fill="#2d3436"/>
+<rect x="42" y="130" width="6" height="28" fill="#3b444b"/>
+</g>
+<rect x="40" y="75" width="12" height="55" rx="4" fill="url(#bodyGrad)"/>
+<g class="wing-mid">
+<path d="M46,115 L46,95 L92,95 C96,95 96,102 92,104 L54,104 L54,118 Z" fill="#718093" stroke="#1e272e" stroke-width="1.2"/>
+<path d="M54,99 L88,99" stroke="#2d3436" stroke-width="1.4" stroke-dasharray="2 4"/>
+</g>
+<g class="head-group">
+<circle cx="46" cy="68" r="11" fill="#2d3436"/>
+<circle cx="50" cy="66" r="3" fill="#f39c12"/>
+<circle cx="50.5" cy="65.5" r="1.4" fill="#000"/>
+<circle cx="51" cy="64.8" r="0.6" fill="white"/>
+<path d="M57,68 L66,64 L64,71 Z" fill="#e67e22"/>
+<path d="M57,68 L66,64 L64,68 Z" fill="#d35400"/>
+<path d="M54,75 L58,83 L54,81 Z" fill="#111"/>
+</g>
+<g>
+<ellipse cx="46" cy="128" rx="5" ry="4" fill="#b7410e" opacity="0.8"/>
+<line x1="43" y1="130" x2="39" y2="155" stroke="#e67e22" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="49" y1="130" x2="53" y2="155" stroke="#e67e22" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M36,155 L39,155 L38,158 L35,158 Z" fill="#1e272e"/>
+<path d="M55,155 L52,155 L53,158 L56,158 Z" fill="#1e272e"/>
+</g>
+</g>
+</svg>
+</div>
+<span class="alcon-text">alcon</span>
+<div class="underline-falcon">
+<svg viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<g class="flying-underline">
+<g class="uwing-left">
+<path d="M10,14 L0,6 L16,12 Z" fill="#4a5568"/>
+<path d="M10,14 L2,8 L14,12 Z" fill="#718093"/>
+</g>
+<g class="ubody">
+<ellipse cx="30" cy="14" rx="14" ry="4.5" fill="#2d3436"/>
+<g class="u-head">
+<circle cx="20" cy="13" r="4.5" fill="#2d3436"/>
+<circle cx="18" cy="12" r="1.8" fill="#f39c12"/>
+<circle class="u-eye" cx="17.5" cy="11.5" r="0.8" fill="#000"/>
+<circle cx="17.8" cy="11.7" r="0.4" fill="white"/>
+<path class="u-beak" d="M15,12 L11,10.5 L14,14 Z" fill="#e67e22"/>
+</g>
+<path d="M44,14 L52,11 L54,16 L45,16 Z" fill="#3b444b"/>
+</g>
+</g>
+</svg>
+</div>
+</div>
+<p class="tagline">adding duck duck go search</p>
+<p class="tagline">test 2</p>
+<button id="full" onclick="fullscreen()"></button>
+<button id="plus" onclick="newWindow()"></button>
+<input type="search" id="button1" name="button1" placeholder="type URL here">
+<button id="forward" onclick="ne()"></button>
+<button id="back" onclick="previous()"></button>
+<input type="color" id="button2" placeholder="">
+<label>
+  <input type="checkbox" id="darkmode" onclick="switchmodes()">
+  dark mode
+</label>
+<p>
+<iframe sandbox="allow-scripts, allow-same-origin" src="" id="IBig"></iframe>
+</p>
+</body>
+</html>
