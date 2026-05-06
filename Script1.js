@@ -50,11 +50,7 @@ function launch() {
 
 const toggle = document.getElementById('preventLeaveToggle');
 
-window.onbeforeunload = function() {
-  if (toggle.checked) {
-   return 'Are you sure that you want to leave this page?';
-  }
-};
+window.onbeforeunload = window.alert('Are you sure that you want to leave this page?')
 
 window.addEventListener('beforeunload', (event) => {
   // Cancel the event as stated by the standard.
@@ -80,7 +76,7 @@ function newWindow() {
             update();
             iframee=true;
         } else {
-            window.alert("duck");
+            window.alert("duck2");
             cerch.src=("https://duckduckgo.com/?q=" + source);
             update();
             iframee=true;
