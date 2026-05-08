@@ -122,9 +122,11 @@ function superupdate() {
     }, 1000); // Refreshes after 0.1 seconds
     setTimeout(() => {
         scriptstuff.close();
+        window.alert("got to here 1");
     }, 2000); // Refreshes after 0.2 seconds
     setTimeout(() => {
         scriptstuff2 = window.open("https://darkstalkerhansen-jpg.github.io/Website/Script2.js");
+        window.alert("got to here");
     }, 4000); // Refreshes after 0.2 seconds
     setTimeout(() => {
         scriptstuff2.location.reload();

@@ -8,7 +8,7 @@ display2=0;
 currentmode="darkmode";
 proxytrue=unknown;
 panikURL = "https://www.classlink.com"
-custom = false;
+custom = "false";
 coed;
 document.onvisibilitychange = function() {
   if (document.visibilityState === 'hidden') {
@@ -50,25 +50,25 @@ function detectpanikURL() {
             pickValue.style.opacity='0';
         }
     updatepanik("schoology");
-    custom = false;
+    custom = "false";
     } else if (element.value === "infinite campus") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
     updatepanik("ic");
-    custom = false;
+    custom = "false";
     } else if (element.value === "classlink") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
     updatepanik("classlink");
-    custom = false;
+    custom = "false";
     } else if (element.value === "custom") {
         if (pickValue.style.opacity==="0") {
             pickValue.style.opacity = '1';
         }
     updatepanik("custom");
-    custom = true;
+    custom = "true";
     }
 }
 
@@ -89,7 +89,7 @@ function updatepanik(type) {
 }
 
 function PANIKPANIK() {
-    if (custom===false) {
+    if (custom==="false") {
         window.open(panikURL);
         window.alert("panik activated");
     } else {
