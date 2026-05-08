@@ -91,6 +91,7 @@ function updatepanik(type) {
 function PANIKPANIK() {
     if (custom===false) {
         window.open(panikURL);
+        window.alert("panik activated");
     } else {
         window.open(document.getElementById("custompanik").value);
     }

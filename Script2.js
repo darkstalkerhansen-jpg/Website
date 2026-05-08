@@ -42,26 +42,26 @@ function detectpanikURL() {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
-    updatepanik("schoology");
-    custom = false;
+        updatepanik("schoology");
+        custom = false;
     } else if (element.value === "infinite campus") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
-    updatepanik("ic");
-    custom = false;
+        updatepanik("ic");
+        custom = false;
     } else if (element.value === "classlink") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
-    updatepanik("classlink");
-    custom = false;
+        updatepanik("classlink");
+        custom = false;
     } else if (element.value === "custom") {
         if (pickValue.style.opacity==="0") {
             pickValue.style.opacity = '1';
         }
-    updatepanik("custom");
-    custom = true;
+        updatepanik("custom");
+        custom = true;
     }
 }
 
@@ -84,6 +84,7 @@ function updatepanik(type) {
 function PANIKPANIK() {
     if (custom===false) {
         window.open(panikURL);
+        window.alert("panik activated");
     } else {
         window.open(document.getElementById("custompanik").value);
     }
