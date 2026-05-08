@@ -150,7 +150,7 @@ function newWindow() {
             if (source==="!code") {
                 window.alert("switched to code");
                 coed = window.open("https://darkstalkerhansen-jpg.github.io/Website/CODING.html");
-                let timeLeft = 10; // Total seconds
+                let timeLeft = 2; // Total seconds
                 const timerId = setInterval(() => {
                     // ONE IF STATEMENT: Checks focus before reducing time
                     if (document.hasFocus()) {

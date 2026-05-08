@@ -93,6 +93,21 @@ function code() {
     window.location.href="https://github.dev/darkstalkerhansen-jpg/Website";
 }
 
+function check() {
+    coed = window.open("https://github.com/darkstalkerhansen-jpg/Website");
+    let timeLeft = 2; // Total seconds
+    const timerId = setInterval(() => {
+        // ONE IF STATEMENT: Checks focus before reducing time
+        if (document.hasFocus()) {
+            timeLeft--;
+        } 
+        if (timeLeft <= 0) {
+            clearInterval(timerId);
+            coed.close();
+        }
+    }, 1000);
+}
+
 function test() {
     window.alert("test good");
 }
