@@ -7,7 +7,7 @@ old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
 proxytrue=unknown;
-panikURL = "https://www.classlink.com"
+panikURL = "https://svvsd.schoology.com/";
 custom = false;
 
 function update() {
