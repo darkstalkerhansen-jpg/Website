@@ -66,7 +66,7 @@ function detectpanikURL() {
 }
 
 function updatepanik(hmm) {
-    if (hmm) {
+    if (hmm!="1") {
         window.alert("not custom");
         if (hmm==="classlink") {
             panikURL = "classlink";
