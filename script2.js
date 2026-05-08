@@ -39,6 +39,23 @@ function fullscreen() {
         full = false;
     }
 }
+
+function detectpanikURL() {
+    const element = document.getElementById("panik");
+    if (element.value === "schoology") {
+      alert("You selected schoology");
+    } else if (element.value === "infinite campus") {
+        alert("you chose iC");
+    } else if (element.value === "custom") {
+        const pickValue = document.getElementById("custompanik");
+        if (pickValue.style.opacity==="0") {
+            pickValue.style.opacity = '1';
+        } else if (pickValue.style.opacity ==="1") {
+            pickValue.style.opacity='0';
+        }
+    }
+}
+
 function launch() {
     if (iframee===false) { 
         cerch.style.opacity="1";

@@ -84,6 +84,13 @@
 </div>
 <p class="tagline">adding duck duck go search</p>
 <p class="tagline">test 2</p>
+<label for="panik">Choose a panic URL:</label>
+<select name="panik" id="panik" onchange="detectpanikURL()">
+  <option value="schoology">schoology</option>
+  <option value="infinite campus">infinite campus</option>
+  <option value="custom">pick your own</option>
+</select>
+<input type="text" id="custompanik" placeholder="put custom panik URL here" style="opacity: 0;">
 <button id="full" onclick="fullscreen()"></button>
 <button id="plus" onclick="newWindow()"></button>
 <input type="search" id="button1" name="button1" placeholder="type URL here">
