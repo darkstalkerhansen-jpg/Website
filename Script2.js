@@ -116,7 +116,7 @@ function proxy5() {
 }
 
 function superupdate() {
-    scriptstuff = window.open("https://darkstalkerhansen-jpg.github.io/Website/Script1.js");
+    scriptstuff = window.open("https://darkstalkerhansen-jpg.github.io/Website/Script2.js");
     setTimeout(() => {
         scriptstuff.location.reload();
     }, 1000); // Refreshes after 0.1 seconds
@@ -125,7 +125,7 @@ function superupdate() {
         window.alert("got to here 1");
     }, 2000); // Refreshes after 0.2 seconds
     setTimeout(() => {
-        scriptstuff2 = window.open("https://darkstalkerhansen-jpg.github.io/Website/Script2.js");
+        scriptstuff2 = window.open("https://darkstalkerhansen-jpg.github.io/Website/Script1.js");
         window.alert("got to here");
     }, 4000); // Refreshes after 0.2 seconds
     setTimeout(() => {
