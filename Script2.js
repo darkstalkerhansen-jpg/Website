@@ -9,17 +9,11 @@ currentmode="darkmode";
 proxytrue=unknown;
 panikURL = "https://www.classlink.com"
 custom = false;
-document.onvisibilitychange = function() {
-  if (document.visibilityState === 'hidden') {
-    window.alert("window exited");
-  }
-};
 
 function update() {
     if (current!=0) {
         old=current;
         current=document.getElementById("IBig").src;
-        document.getElementById("button2").setAttribute('placeholder', "what");
     }
 
 }
@@ -95,40 +89,14 @@ function PANIKPANIK() {
     }
 }
 
+function code() {
+    window.location.href="https://github.dev/darkstalkerhansen-jpg/Website";
+}
+
 function test() {
     window.alert("test good");
 }
 
-function launch() {
-    if (iframee===false) { 
-        cerch.style.opacity="1";
-        const inpt = document.getElementById("button1");
-        let source = inpt.value || "Falcon.html";
-        cerch.src = source;
-        update();
-        iframee=true;
-    } else if (iframee) {
-        cerch.style.opacity='0';
-        cerch.src="";
-        iframee = false;
-    }
-}
-
-const toggle = document.getElementById('preventLeaveToggle');
-
-window.onbeforeunload = window.alert('Are you sure that you want to leave this page?');
-
-window.onbeforeunload = preventDefault();
-
-window.onbeforeunload = event.preventDefault();
-
-
-window.addEventListener('beforeunload', (event) => {
-  // Cancel the event as stated by the standard.
-  event.preventDefault();
-  // Chrome requires returnValue to be set.
-  event.returnValue = 'hey no';
-});
 
 function previous() {
     cerch.src=old;
@@ -146,15 +114,10 @@ function newWindow() {
             update();
             iframee=true;
         } else {
-            if (source==="!code") {
-                window.alert("switched to code");
-                window.location.href="https://darkstalkerhansen-jpg.github.io/Website/CODING.html";
-            } else {
-                window.alert("duck2");
-                cerch.src=("https://duckduckgo.com/?q=" + source);
-                update();
-                iframee=true;
-            }
+            window.alert("duck2");
+            cerch.src=("https://duckduckgo.com/?q=" + source);
+            update();
+            iframee=true;
         }
     } else {
         window.alert("is falcon");
@@ -164,17 +127,6 @@ function newWindow() {
     }
 }
 
-function Proxyy() {
-                if (iframee) {
-                    iframee = false;
-                    cerch.style="opacity:0;";
-                    cerch.src = "";
-                } else if (iframee===false) {
-                    cerch.src = "Falcon.html";
-                    cerch.style="opacity:1;"
-                    iframee = true;
-                }
-            }
 
 function switchmodes() {
     if (currentmode==="darkmode") {
@@ -193,13 +145,3 @@ function switch1() {
         document.body.style.background="#000000";
     }
 }
-function checkifproxy() {
-    if (window.location.ancestorOrigins) {
-        document.getElementById("button2").style.backgroundColor="#FFFFFF";
-        proxytrue=false;
-    } else {
-        document.getElementById("button2").style.backgroundColor="#000000";
-        proxytrue=true;
-    } 
-}
-checkifproxy();

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Falcon Browser</title>
 <link rel="stylesheet" href="FALCON2.css">
-<script src="Script1.js" defer></script>
+<script src="Script2.js" defer></script>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
@@ -81,9 +81,6 @@
 </svg>
 </div>
 </div>
-<p class="tagline">adding duck duck go search</p>
-<p class="tagline">test 2</p>
-<g transform="skewX(-30)">
 <label for="panik">Choose a panic URL:</label>
 <select name="panik" id="panik" onchange="detectpanikURL()">
   <option value="schoology">schoology</option>
@@ -98,9 +95,10 @@
 <input type="search" id="button1" name="button1" placeholder="type URL here">
 <button id="forward" onclick="newWindow()"></button>
 <button id="back" onclick="previous()"></button>
+<button id="code" onclick="code()">CODE</button>
 <label>
   <input type="checkbox" id="darkmode" onclick="switchmodes()">
-  dark mode
+  light mode
 </label>
 <p>
 <iframe sandbox="allow-same-origin allow-scripts" loading="lazy" src="" id="IBig"></iframe>
