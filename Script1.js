@@ -47,22 +47,22 @@ function detectpanikURL() {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
-    updatepanik(schoology);
+    updatepanik("schoology");
     } else if (element.value === "infinite campus") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
-    updatepanik(ic);
+    updatepanik("ic");
     } else if (element.value === "classlink") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
-    updatepanik(classlink);
+    updatepanik("classlink");
     } else if (element.value === "custom") {
         if (pickValue.style.opacity==="0") {
             pickValue.style.opacity = '1';
         }
-    updatepanik(custom);
+    updatepanik("custom");
     }
 }
 
@@ -84,6 +84,10 @@ function updatepanik(type) {
 
 function PANIKPANIK() {
     window.open(panikURL);
+}
+
+function test() {
+    window.alert("test good");
 }
 
 function launch() {
