@@ -69,13 +69,13 @@ function updatepanik(hmm) {
     if (hmm) {
         window.alert("not custom");
         if (hmm==="classlink") {
-            panikURL = "https://www.classlink.com"
+            panikURL = "classlink";
             window.alert(panikURL);
         } else if (hmm==="ic") {
-            panikURL = "https://www.infinitecampus.com"
+            panikURL = "https://www.infinitecampus.com";
             window.alert(panikURL);
         } else if (hmm==="schoology") {
-            panikURL = "https://svvsd.schoology.com"
+            panikURL = "https://svvsd.schoology.com";
             window.alert(panikURL);
         }
     } else {
