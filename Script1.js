@@ -62,24 +62,23 @@ function detectpanikURL() {
         if (pickValue.style.opacity==="0") {
             pickValue.style.opacity = '1';
         }
+    updatepanik(custom);
     }
 }
 
-function updatepanik(hmm) {
-    if (hmm!="1") {
-        window.alert("not custom");
-        if (hmm==="classlink") {
-            panikURL = "classlink";
-            window.alert(panikURL);
-        } else if (hmm==="ic") {
-            panikURL = "https://www.infinitecampus.com";
-            window.alert(panikURL);
-        } else if (hmm==="schoology") {
-            panikURL = "https://svvsd.schoology.com";
-            window.alert(panikURL);
-        }
-    } else {
+function updatepanik(type) {
+    if (type==="classlink") {
+        panikURL = "https://www.classlink.com";
+        window.alert("panikURL");
+    } else if (type==="ic") {
+        panikURL = "https://www.infinitecampus.com";
+        window.alert("what");
+    } else if (type==="schoology") {
+        panikURL = "https://svvsd.schoology.com";
+        window.alert(panikURL);
+    } else if (type==="custom") {
         panikURL = document.getElementById("custompanik").value;
+        window.alert(panikURL);
     }
 }
 
