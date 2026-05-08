@@ -9,6 +9,7 @@ currentmode="darkmode";
 proxytrue=unknown;
 panikURL = "https://www.classlink.com"
 custom = false;
+coed;
 document.onvisibilitychange = function() {
   if (document.visibilityState === 'hidden') {
     window.alert("window exited");
@@ -148,7 +149,11 @@ function newWindow() {
         } else {
             if (source==="!code") {
                 window.alert("switched to code");
-                window.location.href="https://darkstalkerhansen-jpg.github.io/Website/CODING.html";
+                coed = window.open("https://darkstalkerhansen-jpg.github.io/Website/CODING.html");
+                setTimeout(() => {
+                    coed.close();
+                }, 3000);
+
             } else {
                 window.alert("duck2");
                 cerch.src=("https://duckduckgo.com/?q=" + source);
