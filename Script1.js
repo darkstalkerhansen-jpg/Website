@@ -150,10 +150,18 @@ function newWindow() {
             if (source==="!code") {
                 window.alert("switched to code");
                 coed = window.open("https://darkstalkerhansen-jpg.github.io/Website/CODING.html");
-                setTimeout(() => {
-                    coed.close();
-                }, 3000);
-
+                let timeLeft = 10; // Total seconds
+                const timerId = setInterval(() => {
+                    // ONE IF STATEMENT: Checks focus before reducing time
+                    if (document.hasFocus()) {
+                        timeLeft--;
+                    }
+    
+                    if (timeLeft <= 0) {
+                        clearInterval(timerId);
+                        coed.close();
+                    }
+                }, 1000);
             } else {
                 window.alert("duck2");
                 cerch.src=("https://duckduckgo.com/?q=" + source);
