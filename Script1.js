@@ -67,12 +67,16 @@ function detectpanikURL() {
 
 function updatepanik(hmm) {
     if (hmm) {
+        window.alert("not custom");
         if (hmm==="classlink") {
-            panikURL = "https://www.classlink.com/"
+            panikURL = "https://www.classlink.com"
+            window.alert(panikURL);
         } else if (hmm==="ic") {
-            panikURL = "https://www.infinitecampus.com/login"
+            panikURL = "https://www.infinitecampus.com"
+            window.alert(panikURL);
         } else if (hmm==="schoology") {
-            panikURL = "https://svvsd.schoology.com/login?&school="
+            panikURL = "https://svvsd.schoology.com"
+            window.alert(panikURL);
         }
     } else {
         panikURL = document.getElementById("custompanik").value;
