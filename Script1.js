@@ -8,6 +8,7 @@ display2=0;
 currentmode="darkmode";
 proxytrue=unknown;
 panikURL = "https://www.classlink.com/"
+custom = false;
 document.onvisibilitychange = function() {
   if (document.visibilityState === 'hidden') {
     window.alert("window exited");
@@ -48,42 +49,50 @@ function detectpanikURL() {
             pickValue.style.opacity='0';
         }
     updatepanik("schoology");
+    custom = false;
     } else if (element.value === "infinite campus") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
     updatepanik("ic");
+    custom = false;
     } else if (element.value === "classlink") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
     updatepanik("classlink");
+    custom = false;
     } else if (element.value === "custom") {
         if (pickValue.style.opacity==="0") {
             pickValue.style.opacity = '1';
         }
     updatepanik("custom");
+    custom = true;
     }
 }
 
 function updatepanik(type) {
     if (type==="classlink") {
         panikURL = "https://www.classlink.com";
-        window.alert("panikURL");
+        window.alert("set to classlink");
     } else if (type==="ic") {
         panikURL = "https://www.infinitecampus.com";
-        window.alert("what");
+        window.alert("set to infinite campus");
     } else if (type==="schoology") {
         panikURL = "https://svvsd.schoology.com";
-        window.alert(panikURL);
+        window.alert("set to schoology");
     } else if (type==="custom") {
         panikURL = document.getElementById("custompanik").value;
-        window.alert(panikURL);
+        window.alert("set to custom(please input custom panik url)");
     }
 }
 
 function PANIKPANIK() {
-    window.open(panikURL);
+    if (custom===false) {
+        window.open(panikURL);
+    } else {
+        window.open(document.getElementById("custompanik").value);
+    }
 }
 
 function test() {
