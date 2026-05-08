@@ -114,6 +114,24 @@ function proxy5() {
     window.open("https://143.244.207.157");
 }
 
+function superupdate() {
+    scriptstuff = window.open("https://darkstalkerhansen-jpg.github.io/Website/Script1.js");
+    scriptstuff.location.reload();
+    setTimeout(() => {
+        scriptstuff2 = window.open("https://darkstalkerhansen-jpg.github.io/Website/Script2.js");
+        scriptstuff2.location.reload();
+    }, 100); // Refreshes after 0.1 seconds
+    setTimeout(() => {
+        CSSstuff = window.open("https://darkstalkerhansen-jpg.github.io/Website/FALCON2.css");
+        CSSstuff.location.reload();
+    }, 200); // Refreshes after 0.2 seconds
+    setTimeout(() => {
+        scriptstuff.close();
+        scriptstuff2.close();
+        CSSstuff.close();
+    }, 300); // closes after 0.3 seconds
+}
+
 
 function test() {
     window.alert("test good");
