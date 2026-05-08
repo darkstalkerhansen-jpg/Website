@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Falcon Browser</title>
 <link rel="stylesheet" href="FALCON2.css">
-<script src="script2.js" defer></script>
+<script src="Script1.js" defer></script>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
@@ -88,18 +88,16 @@
 <select name="panik" id="panik" onchange="detectpanikURL()">
   <option value="schoology">schoology</option>
   <option value="infinite campus">infinite campus</option>
+  <option value="classlink">classlink</option>
   <option value="custom">pick your own</option>
 </select>
-<input type="text" id="custompanik" placeholder="put custom panik URL here" style="opacity: 0;">
+<input type="text" id="custompanik" placeholder="put custom panik URL here" style="opacity: 0;" onchange="updatepanik()">
+<button id="PANIKBUTTON" onclick="PANIKPANIK()">PANIK BUTTON</button>
 <button id="full" onclick="fullscreen()"></button>
 <button id="plus" onclick="newWindow()"></button>
 <input type="search" id="button1" name="button1" placeholder="type URL here">
 <button id="forward" onclick="newWindow()"></button>
 <button id="back" onclick="previous()"></button>
-<input type="color" id="button2" placeholder="">
-<label>
-  <input type="checkbox" id="preventLeaveToggle"> Enable Protection
-</label>
 <label>
   <input type="checkbox" id="darkmode" onclick="switchmodes()">
   dark mode

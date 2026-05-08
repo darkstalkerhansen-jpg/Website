@@ -1,3 +1,4 @@
+
 const cerch = document.getElementById("IBig");
 cerch.style.opacity="0";
 iframee = false;
@@ -7,6 +8,12 @@ old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
 proxytrue=unknown;
+panikURL = "https://www.classlink.com/"
+document.onvisibilitychange = function() {
+  if (document.visibilityState === 'hidden') {
+    window.alert("window exited");
+  }
+};
 
 function update() {
     if (current!=0) {
@@ -33,6 +40,50 @@ function fullscreen() {
         full = false;
     }
 }
+
+function detectpanikURL() {
+    const element = document.getElementById("panik");
+    const pickValue = document.getElementById("custompanik");
+    if (element.value === "schoology") {
+        if (pickValue.style.opacity ==="1") {
+            pickValue.style.opacity='0';
+        }
+    updatepanik(schoology);
+    } else if (element.value === "infinite campus") {
+        if (pickValue.style.opacity ==="1") {
+            pickValue.style.opacity='0';
+        }
+    updatepanik(ic);
+    } else if (element.value === "classlink") {
+        if (pickValue.style.opacity ==="1") {
+            pickValue.style.opacity='0';
+        }
+    updatepanik(classlink);
+    } else if (element.value === "custom") {
+        if (pickValue.style.opacity==="0") {
+            pickValue.style.opacity = '1';
+        }
+    }
+}
+
+function updatepanik(hmm) {
+    if (hmm) {
+        if (hmm==="classlink") {
+            panikURL = "https://www.classlink.com/"
+        } else if (hmm==="ic") {
+            panikURL = "https://www.infinitecampus.com/login"
+        } else if (hmm==="schoology") {
+            panikURL = "https://svvsd.schoology.com/login?&school="
+        }
+    } else {
+        panikURL = document.getElementById("custompanik").value;
+    }
+}
+
+function PANIKPANIK() {
+    window.location.href = panikURL;
+}
+
 function launch() {
     if (iframee===false) { 
         cerch.style.opacity="1";
@@ -50,13 +101,18 @@ function launch() {
 
 const toggle = document.getElementById('preventLeaveToggle');
 
-window.onbeforeunload = window.alert('Are you sure that you want to leave this page?')
+window.onbeforeunload = window.alert('Are you sure that you want to leave this page?');
+
+window.onbeforeunload = preventDefault();
+
+window.onbeforeunload = event.preventDefault();
+
 
 window.addEventListener('beforeunload', (event) => {
   // Cancel the event as stated by the standard.
   event.preventDefault();
   // Chrome requires returnValue to be set.
-  event.returnValue = '';
+  event.returnValue = 'hey no';
 });
 
 function previous() {
