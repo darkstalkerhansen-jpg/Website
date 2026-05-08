@@ -124,22 +124,22 @@ function superupdate() {
     }, 2000); // Refreshes after 0.2 seconds
     setTimeout(() => {
         scriptstuff2 = window.open("https://darkstalkerhansen-jpg.github.io/Website/Script2.js");
-    }, 3000); // Refreshes after 0.2 seconds
+    }, 4000); // Refreshes after 0.2 seconds
     setTimeout(() => {
         scriptstuff2.location.reload();
-    }, 4000); // closes after 0.3 seconds
+    }, 5000); // closes after 0.3 seconds
     setTimeout(() => {
         scriptstuff2.close();
-    }, 5000); // Refreshes after 0.1 seconds
+    }, 6000); // Refreshes after 0.1 seconds
     setTimeout(() => {
         CSSstuff = window.open("https://darkstalkerhansen-jpg.github.io/Website/FALCON2.css");
-    }, 6000); // Refreshes after 0.2 seconds
+    }, 8000); // Refreshes after 0.2 seconds
     setTimeout(() => {
         CSSstuff.location.reload();
-    }, 7000); // closes after 0.3 seconds
+    }, 9000); // closes after 0.3 seconds
     setTimeout(() => {
         CSSstuff.close();
-    }, 8000); // Refreshes after 0.1 seconds
+    }, 10000); // Refreshes after 0.1 seconds
 }
 
 
