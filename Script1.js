@@ -1,4 +1,3 @@
-
 const cerch = document.getElementById("IBig");
 cerch.style.opacity="0";
 iframee = false;
@@ -81,7 +80,7 @@ function updatepanik(hmm) {
 }
 
 function PANIKPANIK() {
-    window.location.href = panikURL;
+    window.open(panikURL);
 }
 
 function launch() {
