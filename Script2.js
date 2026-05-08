@@ -108,6 +108,13 @@ function check() {
     }, 1000);
 }
 
+function proxy5() {
+    navigator.clipboard.writeText("https://darkstalkerhansen-jpg.github.io/Website/index.html");
+    window.alert("text copied(pase into proxy)")
+    window.open("https://143.244.207.157");
+}
+
+
 function test() {
     window.alert("test good");
 }
