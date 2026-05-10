@@ -163,6 +163,11 @@ function newWindow() {
                         coed.close();
                     }
                 }, 1000);
+            } else if (source==="!gamble") {
+                window.alert("bros gambling");
+                cerch.src="https://www.247slots.org/";
+                update();
+                iframee=true;
             } else {
                 window.alert("duck2");
                 cerch.src=("https://duckduckgo.com/?q=" + source);
