@@ -229,4 +229,5 @@ function checkifproxy() {
     } 
 }
 checkifproxy();
-updatepanik(schoology);
+updatepanik("schoology");
+window.alert("version 1.1");
