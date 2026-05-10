@@ -90,6 +90,7 @@ function updatepanik(type) {
 
 function PANIKPANIK() {
     if (custom===false) {
+        window.alert("pls work");
         window.open(panikURL);
         window.alert("panik activated");
     } else {
