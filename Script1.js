@@ -231,6 +231,6 @@ function checkifproxy() {
 
 function loadscript() {
     checkifproxy();
-    updatepanik("schoology");
+    detectpanikURL();
     window.alert("version 1.1");
 }
