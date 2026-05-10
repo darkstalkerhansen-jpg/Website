@@ -7,8 +7,8 @@ old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
 proxytrue=unknown;
-panikURL = "https://www.classlink.com"
-custom = "false";
+panikURL = "https://svvsd.schoology.com";
+custom = false;
 coed;
 document.onvisibilitychange = function() {
   if (document.visibilityState === 'hidden') {
@@ -89,7 +89,7 @@ function updatepanik(type) {
 }
 
 function PANIKPANIK() {
-    if (custom==="false") {
+    if (custom===false) {
         window.open(panikURL);
         window.alert("panik activated");
     } else {
