@@ -228,6 +228,9 @@ function checkifproxy() {
         proxytrue=true;
     } 
 }
-checkifproxy();
-updatepanik("schoology");
-window.alert("version 1.1");
+
+function loadscript() {
+    checkifproxy();
+    updatepanik("schoology");
+    window.alert("version 1.1");
+}
