@@ -50,25 +50,25 @@ function detectpanikURL() {
             pickValue.style.opacity='0';
         }
     updatepanik("schoology");
-    custom = "false";
+    custom = false;
     } else if (element.value === "infinite campus") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
     updatepanik("ic");
-    custom = "false";
+    custom = false;
     } else if (element.value === "classlink") {
         if (pickValue.style.opacity ==="1") {
             pickValue.style.opacity='0';
         }
     updatepanik("classlink");
-    custom = "false";
+    custom = false;
     } else if (element.value === "custom") {
         if (pickValue.style.opacity==="0") {
             pickValue.style.opacity = '1';
         }
     updatepanik("custom");
-    custom = "true";
+    custom = true;
     }
 }
 
@@ -221,11 +221,12 @@ function switch1() {
 }
 function checkifproxy() {
     if (window.location.ancestorOrigins) {
-        document.getElementById("button2").style.backgroundColor="#FFFFFF";
+        document.getElementById("button1").style.backgroundColor="#FFFFFF";
         proxytrue=false;
     } else {
-        document.getElementById("button2").style.backgroundColor="#000000";
+        document.getElementById("button1").style.backgroundColor="#000000";
         proxytrue=true;
     } 
 }
 checkifproxy();
+updatepanik(schoology);
