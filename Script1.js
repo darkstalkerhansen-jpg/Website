@@ -191,7 +191,7 @@ function newWindow() {
                 ifproxy();
             } else if (source==="!url") {
                 window.alert("retrieving url...");
-                iframeurl = cerch.src;
+                iframeurl = cerch.contentWindow.location.href;
                 window.alert("the url is:" + iframeurl);
             } else {
                 window.alert("duck2");
@@ -270,5 +270,5 @@ function checkifproxy() {
 function loadscript() {
     checkifproxy();
     detectpanikURL();
-    window.alert("version 1.5");
+    window.alert("version 1.6");
 }
