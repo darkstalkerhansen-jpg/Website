@@ -72,8 +72,11 @@ function detectpanikURL() {
 
 function ifproxy() {
     if (proxytrue===false) {
-        window.alert("page might be blocked by security on your device. a proxy has been launched.");
-        proxy5();
+        if (confirm("page might be blocked by security on your device. proceed to proxy?")) {
+            proxy5();
+        } else {
+            window.alert("proceed");
+        }
     } else if (proxytrue===true) {
         window.alert("you are good u in proxy");
     } else if (proxytrue==="unknown") {
@@ -267,5 +270,5 @@ function checkifproxy() {
 function loadscript() {
     checkifproxy();
     detectpanikURL();
-    window.alert("version 1.4");
+    window.alert("version 1.5");
 }
