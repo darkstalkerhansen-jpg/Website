@@ -70,6 +70,13 @@ function detectpanikURL() {
     }
 }
 
+function ifproxy() {
+    if (proxytrue===false) {
+        window.alert("page might be blocked by security on your device. a proxy has been launched.");
+        proxy5();
+    }
+}
+
 function updatepanik(type) {
     if (type==="classlink") {
         panikURL = "https://www.classlink.com";
@@ -167,11 +174,13 @@ function newWindow() {
                 cerch.src="https://www.247slots.org/";
                 update();
                 iframee=true;
+                ifproxy();
             } else if (source==="!youtube") {
                 window.alert("youtube loading");
                 cerch.src="https://youtube.com";
                 update();
                 iframee=true;
+                ifproxy();
             } else if (source==="!url") {
                 window.alert("retrieving url...");
                 iframeurl = cerch.src;
@@ -181,6 +190,7 @@ function newWindow() {
                 cerch.src=("https://duckduckgo.com/?q=" + source);
                 update();
                 iframee=true;
+                ifproxy();
             }
         }
     } else {
