@@ -6,7 +6,7 @@ current = 0;
 old = "https:/"+"/143.244.207.157";
 display2=0;
 currentmode="darkmode";
-proxytrue=unknown;
+proxytrue="unknown";
 panikURL = "https://svvsd.schoology.com";
 custom = false;
 coed;
@@ -74,6 +74,10 @@ function ifproxy() {
     if (proxytrue===false) {
         window.alert("page might be blocked by security on your device. a proxy has been launched.");
         proxy5();
+    } else if (proxytrue===true) {
+        window.alert("you are good u in proxy");
+    } else if (proxytrue==="unknown") {
+        window.alert("idk if u in proxy");
     }
 }
 
@@ -171,12 +175,13 @@ function newWindow() {
                 }, 1000);
             } else if (source==="!gamble") {
                 window.alert("bros gambling");
+                ifproxy();
                 cerch.src="https://www.247slots.org/";
                 update();
                 iframee=true;
-                ifproxy();
             } else if (source==="!youtube") {
                 window.alert("youtube loading");
+                ifproxy();
                 cerch.src="https://youtube.com";
                 update();
                 iframee=true;
@@ -187,6 +192,7 @@ function newWindow() {
                 window.alert("the url is:" + iframeurl);
             } else {
                 window.alert("duck2");
+                ifproxy();
                 cerch.src=("https://duckduckgo.com/?q=" + source);
                 update();
                 iframee=true;
@@ -261,5 +267,5 @@ function checkifproxy() {
 function loadscript() {
     checkifproxy();
     detectpanikURL();
-    window.alert("version 1.3");
+    window.alert("version 1.4");
 }
