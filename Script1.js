@@ -261,5 +261,5 @@ function checkifproxy() {
 function loadscript() {
     checkifproxy();
     detectpanikURL();
-    window.alert("version 1.2");
+    window.alert("version 1.3");
 }
