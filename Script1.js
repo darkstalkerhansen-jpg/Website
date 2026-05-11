@@ -1,4 +1,4 @@
-const cerch = document.getElementById("IBig");
+const cerch = document.getElementById('IBig');
 cerch.style.opacity="0";
 iframee = false;
 full = false;
@@ -190,6 +190,18 @@ function newWindow() {
         iframee=true;
     }
 }
+
+
+cerch.addEventListener('load', function() {
+    try {
+        const currentURL = cerch.contentWindow.location.href;
+        console.log("Iframe navigated to:", currentURL);
+    } catch (e) {
+        // This catch block handles cases where the iframe navigated 
+        // to a cross-origin URL mid-session.
+        console.error("Access denied: Iframe moved to a different domain.");
+    }
+});
 
 function proxy5() {
     navigator.clipboard.writeText("https://darkstalkerhansen-jpg.github.io/Website/index.html");
