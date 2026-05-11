@@ -17,13 +17,11 @@ document.onvisibilitychange = function() {
 };
 
 function update() {
-    if (current!=0) {
-        old=current;
-        current=document.getElementById("IBig").src;
-        document.getElementById("button2").setAttribute('placeholder', "what");
-    }
-
+    old=current;
+    current=document.getElementById("IBig").src;
+    document.getElementById("button2").setAttribute('placeholder', "what");
 }
+
 function fullscreen() {
     const wow = document.getElementById("title-wrapper");
     if (full===false) {
@@ -169,6 +167,15 @@ function newWindow() {
                 cerch.src="https://www.247slots.org/";
                 update();
                 iframee=true;
+            } else if (source==="!youtube") {
+                window.alert("youtube loading");
+                cerch.src="https://youtube.com";
+                update();
+                iframee=true;
+            } else if (source==="!url") {
+                window.alert("retrieving url...");
+                iframeurl = cerch.src;
+                window.alert("the url is:" + iframeurl);
             } else {
                 window.alert("duck2");
                 cerch.src=("https://duckduckgo.com/?q=" + source);
