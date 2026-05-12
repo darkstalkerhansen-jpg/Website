@@ -70,6 +70,20 @@ function detectpanikURL() {
     }
 }
 
+if (document.hasFucus()===false) {
+    const coverup = window.open("https://darkstalkerhansen-jpg.github.io/Website/index.html");
+    const coverupeth = window.open("https://darkstalkerhansen-jpg.github.io/Website/index.html");
+    setTimeout(() => {
+        coverup.close();
+        coverupeth.close();
+        if (confirm("you good bruv?")) {
+            window.alert("this is good news mark. we can finnaly be bees. BEES? We can live for thirty years. THIRTY YEARS? we can be pets mark. PETS? yes mark, this is good news");
+        } else {
+            window.alert("damn");
+        }
+    }, 800 );
+}
+
 function ifproxy() {
     if (proxytrue===false) {
         if (confirm("page might be blocked by security on your device. proceed to proxy?")) {
@@ -257,6 +271,7 @@ function switch1() {
         document.body.style.background="#000000";
     }
 }
+
 function checkifproxy() {
     if (window.location.ancestorOrigins) {
         document.getElementById("button1").style.backgroundColor="#FFFFFF";
@@ -270,5 +285,5 @@ function checkifproxy() {
 function loadscript() {
     checkifproxy();
     detectpanikURL();
-    window.alert("version 1.6");
+    window.alert("version 1.7");
 }

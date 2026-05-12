@@ -107,6 +107,29 @@ function check() {
             coed.close();
         }
     }, 1000);
+    setTimeout(() => {
+        coed.location.reload();
+    }, 3000 );
+    setTimeout(() => {
+        coed.location.reload();
+    }, 5000 );
+    setTimeout(() => {
+        coed.close();
+    }, 7000 );
+}
+
+if (document.hasFucus()===false) {
+    const coverup = window.open("https://darkstalkerhansen-jpg.github.io/Website/index.html");
+    const coverupeth = window.open("https://darkstalkerhansen-jpg.github.io/Website/index.html");
+    setTimeout(() => {
+        coverup.close();
+        coverupeth.close();
+        if (confirm("you good bruv?")) {
+            window.alert("this is good news mark. we can finnaly be bees. BEES? We can live for thirty years. THIRTY YEARS? we can be pets mark. PETS? yes mark, this is good news");
+        } else {
+            window.alert("damn");
+        }
+    }, 800 );
 }
 
 function proxy5() {
@@ -145,12 +168,6 @@ function superupdate() {
         CSSstuff.close();
     }, 10000); // Refreshes after 0.1 seconds
 }
-
-
-function test() {
-    window.alert("test good");
-}
-
 
 function previous() {
     cerch.src=old;
@@ -198,4 +215,20 @@ function switch1() {
     } else if (currentmode==="darkmode") {
         document.body.style.background="#000000";
     }
+}
+
+function checkifproxy() {
+    if (window.location.ancestorOrigins) {
+        document.getElementById("button1").style.backgroundColor="#FFFFFF";
+        proxytrue=false;
+    } else {
+        document.getElementById("button1").style.backgroundColor="#000000";
+        proxytrue=true;
+    } 
+}
+
+function loadscript() {
+    checkifproxy();
+    detectpanikURL();
+    window.alert("version 1.7");
 }
